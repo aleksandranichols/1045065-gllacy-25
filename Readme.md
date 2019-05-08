@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Aleksandra](https://up.htmlacademy.ru/htmlcss/25/user/1045065).
-* Наставник: `Неизвестно`.
+* Наставник: [Арсений Березин](https://htmlacademy.ru/profile/id263537).
 
 ---
 
