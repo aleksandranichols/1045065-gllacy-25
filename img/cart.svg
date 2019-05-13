@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="32.031" viewBox="0 0 100 32.031">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+        opacity: 0.2;
+      }
+    </style>
+  </defs>
+  <path id="Подложка_copy" data-name="Подложка copy" class="cls-1" d="M1089,23h67a16.029,16.029,0,1,1,0,32h-67A16,16,0,0,1,1089,23Z" transform="translate(-1073 -22.969)"/>
+</svg>
