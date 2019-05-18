@@ -25,13 +25,30 @@
             <li><a href="delivery.html">Доставка и оплата</a></li>
             <li><a href="about-us.html">О Компании</a></li>
           </ul>
-          <div class="search-button">
-            <img src="img/magnifier.svg" alt="Иконка лупы" width="17" height="17">
-            Форма поиска
+          <div class="search">
+            <button class="button search-button" type="button" aria-label="Кнопка поиска"></button>
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+              <h3 class="visually-hidden">Форма поиска</h3>
+              <label class="visually-hidden" for="search">Поле ввода поиска</label>
+              <input id="search" type="search" name="search" placeholder="Что ищем?">
+            </form>
           </div>
-          <div class="sign-in-button">
-            <img src="img/signin.svg" alt="Иконка входа" width="21" height="19">
-            Форма входа
+          <div class="sign-in">
+            <a href="sign-in.html">Вход</a>
+            <form class="sign-in-form" action="https://echo.htmlacademy.ru" method="get">
+              <h3 class="visually-hidden">Форма входа</h3>
+              <p>
+                <label class="visually-hidden" for="sign-in-email">Поле ввода почты</label>
+                <input id="sign-in-email" type="email" name="sign-in-email" placeholder="Электронная почта">
+              </p>
+              <p>
+                <label class="visually-hidden" for="sign-in-password">Поле ввода пароля</label>
+                <input id="sign-in-password" type="password" name="sign-in-password" placeholder="Пароль">
+              </p>
+              <p><a href="forgot-password.html">Забыли пароль?</a></p>
+              <p><a href="sign-up.html">Новая регистрация</a></p>
+              <button class="button submit-button" type="submit" aria-label="Войти">Войти</button>
+            </form>
           </div>
           <ul>
             <li>
@@ -78,7 +95,31 @@
       <section class="subscribe">
         <h2 class="visually-hidden">Подписка</h2>
           <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <form>Ввод эллектронной почты + кнопка отправить</form>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+            <h3 class="visually-hidden">Форма подписки на рассылку</h3>
+            <label class="visually-hidden" for="subscribe-email">Электронная почта</label>
+            <input id="subscribe-email" type="email" name="subscribe-email" placeholder="Электронная почта">
+            <button class="button submit-button" type="submit" aria-label="Отправить форму">Отправить</button>
+          </form>
+      </section>
+      <section class="map">
+        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+          <h3 class="visually-hidden">Форма обратной связи</h3>
+          <p>Мы обязательно вам ответим!</p>
+          <p>
+            <label class="visually-hidden" for="feedback-name">Поле ввода имени</label>
+            <input id="feedback-name" type="text" name="feedback-name" placeholder="Как вас зовут?">
+          </p>
+          <p>
+            <label class="visually-hidden" for="feedback-email">Поле ввода почты</label>
+            <input id="feedback-email" type="email" name="feedback-email" placeholder="Ваша почта для ответа?">
+          </p>
+          <p>
+            <label class="visually-hidden" for="feedback-comment">Поле ввода комментария</label>
+            <textarea id="feedback-comment" rows="7">Напишите что-нибудь...</textarea>
+          </p>
+          <button class="button submit-button" type="submit" aria-label="Отправить форму">Отправить</button>
+        </form>
       </section>
     </main>
     <footer class="main-footer">

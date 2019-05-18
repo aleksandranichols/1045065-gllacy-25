@@ -25,13 +25,30 @@
             <li><a href="delivery.html">Доставка и оплата</a></li>
             <li><a href="about-us.html">О Компании</a></li>
           </ul>
-          <div class="search-button">
-            <img src="img/magnifier.svg" alt="Иконка лупы" width="17" height="17">
-            Форма поиска
+          <div class="search">
+            <button class="button search-button" type="button" aria-label="Кнопка поиска"></button>
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+              <h3 class="visually-hidden">Форма поиска</h3>
+              <label class="visually-hidden" for="search">Поле ввода поиска</label>
+              <input id="search" type="search" name="search" placeholder="Что ищем?">
+            </form>
           </div>
-          <div class="sign-in-button">
-            <img src="img/signin.svg" alt="Иконка входа" width="21" height="19">
-            Форма входа
+          <div class="sign-in">
+            <a href="sign-in.html">Вход</a>
+            <form class="sign-in-form" action="https://echo.htmlacademy.ru" method="get">
+              <h3 class="visually-hidden">Форма входа</h3>
+              <p>
+                <label class="visually-hidden" for="sign-in-email">Поле ввода почты</label>
+                <input id="sign-in-email" type="email" name="sign-in-email" placeholder="Электронная почта">
+              </p>
+              <p>
+                <label class="visually-hidden" for="sign-in-password">Поле ввода пароля</label>
+                <input id="sign-in-password" type="password" name="sign-in-password" placeholder="Пароль">
+              </p>
+              <p><a href="forgot-password.html">Забыли пароль?</a></p>
+              <p><a href="sign-up.html">Новая регистрация</a></p>
+              <button class="button submit-button" type="submit" aria-label="Войти">Войти</button>
+            </form>
           </div>
           <ul>
             <li>
@@ -39,6 +56,26 @@
                 <img src="img/cart-full.svg" alt="Иконка корзины" width="21" height="20">
                 2 товара
               </a>
+              <form class="cart-form" action="https://echo.htmlacademy.ru" method="post">
+                <table>
+                  <tr>
+                      <th><button class="button remove-button" type="button" aria-label="Удалить мороженое из корзины">X</button></th>
+                      <th><img src="img/ice-cream-orange.jpg" alt="Мороженое для любителей апельсинок" width="33" height="33"></th>
+                      <th>Пломбир с апельсиновым джемом</th>
+                      <th>1,5 кг х 200 руб.</th>
+                      <th>300 руб.</th>
+                  </tr>
+                  <tr>
+                      <th><button class="button remove-button" type="button" aria-label="Удалить мороженое из корзины">X</button></th>
+                      <th><img src="img/ice-cream-strawberry.jpg" alt="Мороженое для любителей клубники" width="33" height="33"></th>
+                      <th>Клубничный пломбир с присыпкой из белого шоколада</th>
+                      <th>1,5 кг х 300 руб.</th>
+                      <th>450 руб.</th>
+                  </tr>
+                </table>
+                <b>Итого: 750 руб.</b>
+                <button class="button submit-button" type="submit" aria-label="Оформить заказ">Оформить заказ</button>
+              </form>
             </li>
           </ul>
         </nav>
