@@ -1,0 +1,434 @@
+body
+{
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+
+    margin: 0;
+
+    color: #fff;
+    background-color: #849d8f;
+}
+
+.main-header .main-menu a,
+.main-header .breadcrumbs a,
+.main-footer a:not(.copyright-link),
+.catalog-creamy a
+{
+    text-decoration: none;
+
+    border-bottom: 1px solid #b3ccbe;
+}
+
+.main-header a,
+.main-footer a,
+.catalog-creamy a
+{
+    color: #fff;
+    background-color: #849d8f;
+}
+
+.main-header a:hover,
+.main-header a:focus
+{
+    padding: 9px 13px 10px 14px;
+
+    text-decoration: none;
+
+    color: #333;
+    border: none;
+    border-radius: 20px;
+    background-color: #f7f6f3;
+}
+
+.main-header a:active
+{
+    background-color: #ededed;
+    box-shadow: inset 0 2px 1px 0 #696969;
+}
+
+.main-footer a:hover:not(.copyright-link),
+.main-footer a:focus:not(.copyright-link)
+{
+    color: #ffbc9e;
+    border-bottom: 1px solid #ffbc9e;
+    background-color: #849d8f;
+}
+
+.button
+{
+    font: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+
+    text-align: center;
+    vertical-align: middle;
+
+    opacity: .99;
+    color: #fff;
+    border: none;
+    border-radius: 22px;
+    background-color: #e95138;
+    background-image: linear-gradient(to top, #ca3824, #f26843);
+    box-shadow: 0 2px 2px 0 rgba(85, 8, 0, .54);
+}
+
+.button:hover,
+.button:focus
+{
+    color: #fefefe;
+    background-color: #e95138;
+    background-image: linear-gradient(to top, #e74a35, #f26843), linear-gradient(to bottom, rgba(255, 255, 255, .2), rgba(255, 255, 255, .2));
+    box-shadow: 0 1px 2px 0 #ac1000;
+}
+
+.button:active
+{
+    color: #fceeec;
+    background-color: #e95138;
+    background-image: linear-gradient(to bottom, #e74a35, #f26843), linear-gradient(to bottom, rgba(0, 0, 0, .07), rgba(0, 0, 0, .07));
+    box-shadow: inset 0 2px 2px 0 #942718;
+}
+
+.main-menu
+{
+    font-weight: bold;
+
+    list-style-type: none;
+}
+
+.main-menu-item
+{
+    margin: 20px 0; /* позже удалю */
+
+    text-align: left;
+}
+
+.main-menu-item-current
+{
+    padding: 9px 13px 10px 14px;
+
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    background-color: #d07058;
+}
+
+.search-button
+{
+    width: 33px;
+    height: 33px;
+
+    border: none;
+    border-radius: 16px;
+    background-color: #a0b5a9;
+}
+
+.search-button:hover,
+.search-button:focus
+{
+    background-color: #f8f7f4;
+}
+
+.sign-in
+{
+    font-size: 14px;
+    line-height: 16px;
+
+    margin: 20px 0; /* позже удалю */
+}
+
+.sign-in a,
+.cart a,
+.cart-full a
+{
+    padding: 10px 17px 9px 44px;
+
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    background-color: #a0b5a9;
+}
+
+.sign-in a:hover,
+.sign-in a:focus
+{
+    padding: 10px 17px 9px 44px;
+}
+
+.cart a,
+.cart-full a
+{
+    padding: 11px 17px 9px 45px;
+}
+
+.cart a:hover,
+.cart a:focus,
+.cart-full a:hover,
+.cart-full a:focus
+{
+    padding: 10px 16px 9px 44px;
+}
+
+.cart,
+.cart-full
+{
+    font-size: 14px;
+    line-height: 16px;
+
+    margin: 20px 0; /* позже удалю */
+}
+
+.cart-full a
+{
+    color: #323232;
+    background-color: #f8f7f4;
+}
+
+.open-hours
+{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16px;
+}
+
+.phone-number
+{
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.page-title-creamy
+{
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 41px;
+}
+
+.about-glassy
+{
+    width: 1146px;
+
+    text-align: left;
+
+    color: #323232;
+    border-radius: 15px;
+    background-color: #ede1c5;
+    background-image: url('../img/background-about-glassy.jpg');
+}
+
+.page-title-main
+{
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.about-glassy-details
+{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 22px;
+
+    list-style-type: none;
+
+    column-count: 2;
+}
+
+.blog-news
+{
+    font-size: 16px;
+    line-height: 22px;
+
+    width: 560px;
+    height: 220px;
+
+    text-align: left;
+
+    color: #323232;
+    border-radius: 15px;
+    background-color: #fff;
+    background-image: url('../img/background-blog-news.jpg');
+}
+
+.blog-news-title
+{
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.blog-news-details
+{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+
+    text-decoration: underline;
+}
+
+.subscribe
+{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 22px;
+
+    width: 550px;
+    height: 210px;
+
+    text-align: left;
+
+    color: #5a5a5a;
+    border: 5px solid transparent;
+    border-radius: 15px;
+    border-image-source: url('../img/border-subscribe.jpg');
+    background-color: #f8f7f4;
+}
+
+.subscribe input
+{
+    font: inherit;
+    font-weight: bold;
+    line-height: 24px;
+
+    border: 1px solid #d3d3d2;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+input::placeholder
+{
+    font-weight: normal;
+}
+
+.subscribe input:hover
+{
+    border: 2px solid #c7c6c5;
+}
+
+.subscribe input:focus
+{
+    border: 2px solid #2e88e4;
+}
+
+.information-list,
+.social-list,
+.breadcrumbs,
+.catalog-creamy-list
+{
+    list-style-type: none;
+}
+
+.list-item-creamy:hover
+{
+    width: 293px;
+    height: 405px;
+
+    color: #fff;
+    border-radius: 5px;
+    background-color: #9bafa3;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .4);
+}
+
+.list-item-creamy
+{
+    margin: 50px 0; /* потом удалю */
+}
+
+.list-item-creamy img
+{
+    border-radius: 50%;
+}
+
+.list-title-creamy
+{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.list-price-creamy
+{
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 45px;
+}
+
+.list-price-creamy span
+{
+    font-size: 30px;
+}
+
+.breadcrumbs-item
+{
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 16px;
+
+    margin: 20px 0; /* потом удалю */
+}
+
+.social-list-item
+{
+    margin: 20px 0; /* потом удалю */
+
+    text-align: left;
+}
+
+.information-list
+{
+    text-align: center;
+}
+
+.information
+{
+    font-size: 13px;
+    font-weight: normal;
+
+    text-align: left;
+}
+
+.information .vendors
+{
+    font-weight: bold;
+}
+
+.copyright
+{
+    font-size: 12px;
+    font-weight: normal;
+
+    text-align: right;
+}
+
+.dropdown
+{
+    display: none;
+
+    border: none;
+}
+
+.search-form
+{
+    display: none;
+}
+
+.sign-in-form
+{
+    display: none;
+}
+
+.feedback-form
+{
+    display: none;
+}
+
+.cart-form
+{
+    display: none;
+}
