@@ -124,6 +124,7 @@ body
     border: none;
     border-radius: 16px;
     background-color: #a0b5a9;
+    background-image: url("../img/magnifier.svg");
 }
 
 .search-button:hover,
