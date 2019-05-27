@@ -11,8 +11,8 @@ body
     background-color: #849d8f;
 }
 
-.main-header .main-menu a,
-.main-header .breadcrumbs a,
+.main-menu a,
+.breadcrumbs a,
 .main-footer a:not(.copyright-link),
 .catalog-creamy a
 {
@@ -38,7 +38,7 @@ body
 
     color: #333;
     border: none;
-    border-radius: 20px;
+    border-radius: 20px; /* уточнить */
     background-color: #f7f6f3;
 }
 
@@ -69,7 +69,7 @@ body
     opacity: .99;
     color: #fff;
     border: none;
-    border-radius: 22px;
+    border-radius: 20px;
     background-color: #e95138;
     background-image: linear-gradient(to top, #ca3824, #f26843);
     box-shadow: 0 2px 2px 0 rgba(85, 8, 0, .54);
@@ -112,7 +112,7 @@ body
 
     color: #fff;
     border: none;
-    border-radius: 20px;
+    border-radius: 20px; /* уточнить */
     background-color: #d07058;
 }
 
@@ -122,9 +122,9 @@ body
     height: 33px;
 
     border: none;
-    border-radius: 16px;
+    border-radius: 17px;
     background-color: #a0b5a9;
-    background-image: url("../img/magnifier.svg");
+    background-image: url('../img/magnifier.svg');
 }
 
 .search-button:hover,
@@ -153,7 +153,7 @@ body
 
     color: #fff;
     border: none;
-    border-radius: 20px;
+    border-radius: 20px; /* уточнить */
     background-color: #a0b5a9;
 }
 
@@ -325,7 +325,8 @@ input::placeholder
     list-style-type: none;
 }
 
-.list-item-creamy:hover
+.list-item-creamy:hover,
+.list-item-creamy:focus
 {
     width: 293px;
     height: 405px;
@@ -343,7 +344,7 @@ input::placeholder
 
 .list-item-creamy img
 {
-    border-radius: 50%;
+    border-radius: 135px;
 }
 
 .list-title-creamy
