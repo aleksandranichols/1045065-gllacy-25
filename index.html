@@ -11,48 +11,52 @@
     <header class="main-header">
       <div class="container">
         <nav class="main-navigation">
-            <img src="img/logo-glassyshop.svg" alt="Логотип GlassyShop" width="154" height="64">
-          <ul class="main-menu">
-            <li class="main-menu-item">
-              <a href="catalog.html">Каталог</a>
-              <ul class="dropdown">
-                <li><a href="ice-cream-new.html">Новинки</a></li>
-                <li><a href="catalog.html">Сливочное</a></li>
-                <li><a href="ice-cream-sherbet.html">Щербеты</a></li>
-                <li><a href="ice-cream-popsicle.html">Фруктовый лед</a></li>
-                <li><a href="ice-cream-mellorine.html">Мелорин</a></li>
-              </ul>
-            </li>
-            <li class="main-menu-item"><a href="delivery.html">Доставка и оплата</a></li>
-            <li class="main-menu-item"><a href="about-us.html">О Компании</a></li>
-          </ul>
-          <div class="search">
-            <button class="search-button" type="button" aria-label="Кнопка поиска"></button>
-            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-              <h3 class="visually-hidden">Форма поиска</h3>
-              <label class="visually-hidden" for="search">Поле ввода поиска</label>
-              <input id="search" type="search" name="search" placeholder="Что ищем?">
-            </form>
+          <div class="main-menu-wrapper">
+              <img src="img/logo-glassyshop.svg" alt="Логотип GlassyShop" width="154" height="64">
+            <ul class="main-menu">
+              <li class="main-menu-item">
+                <a href="catalog.html">Каталог</a>
+                <ul class="dropdown">
+                  <li><a href="ice-cream-new.html">Новинки</a></li>
+                  <li><a href="catalog.html">Сливочное</a></li>
+                  <li><a href="ice-cream-sherbet.html">Щербеты</a></li>
+                  <li><a href="ice-cream-popsicle.html">Фруктовый лед</a></li>
+                  <li><a href="ice-cream-mellorine.html">Мелорин</a></li>
+                </ul>
+              </li>
+              <li class="main-menu-item"><a href="delivery.html">Доставка и оплата</a></li>
+              <li class="main-menu-item"><a href="about-us.html">О Компании</a></li>
+            </ul>
           </div>
-          <div class="sign-in">
-            <a href="sign-in.html">Вход</a>
-            <form class="sign-in-form" action="https://echo.htmlacademy.ru" method="get">
-              <h3 class="visually-hidden">Форма входа</h3>
-              <p>
-                <label class="visually-hidden" for="sign-in-email">Поле ввода почты</label>
-                <input id="sign-in-email" type="email" name="sign-in-email" placeholder="Электронная почта">
-              </p>
-              <p>
-                <label class="visually-hidden" for="sign-in-password">Поле ввода пароля</label>
-                <input id="sign-in-password" type="password" name="sign-in-password" placeholder="Пароль">
-              </p>
-              <p><a href="forgot-password.html">Забыли пароль?</a></p>
-              <p><a href="sign-up.html">Новая регистрация</a></p>
-              <button class="button submit-button" type="submit" aria-label="Войти">Войти</button>
-            </form>
-          </div>
-          <div class="cart">
-            <a href="cart.html">Пусто</a>
+          <div class="post-menu-wrapper">
+            <div class="search">
+              <button class="search-button" type="button" aria-label="Кнопка поиска"></button>
+              <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+                <h3 class="visually-hidden">Форма поиска</h3>
+                <label class="visually-hidden" for="search">Поле ввода поиска</label>
+                <input id="search" type="search" name="search" placeholder="Что ищем?">
+              </form>
+            </div>
+            <div class="sign-in">
+              <a href="sign-in.html">Вход</a>
+              <form class="sign-in-form" action="https://echo.htmlacademy.ru" method="get">
+                <h3 class="visually-hidden">Форма входа</h3>
+                <p>
+                  <label class="visually-hidden" for="sign-in-email">Поле ввода почты</label>
+                  <input id="sign-in-email" type="email" name="sign-in-email" placeholder="Электронная почта">
+                </p>
+                <p>
+                  <label class="visually-hidden" for="sign-in-password">Поле ввода пароля</label>
+                  <input id="sign-in-password" type="password" name="sign-in-password" placeholder="Пароль">
+                </p>
+                <p><a href="forgot-password.html">Забыли пароль?</a></p>
+                <p><a href="sign-up.html">Новая регистрация</a></p>
+                <button class="button submit-button" type="submit" aria-label="Войти">Войти</button>
+              </form>
+            </div>
+            <div class="cart">
+              <a href="cart.html">Пусто</a>
+            </div>
           </div>
         </nav>
       </div>
@@ -84,20 +88,24 @@
           </li>
         </ul>
       </section>
-      <article class="blog-news">
-        <h2 class="blog-news-title">Новое в нашем блоге</h2>
-        <h3 class="blog-news-details">10 способов сервировки фруктовых щербетов к столу</h3>
-      </article>
-      <section class="subscribe">
-        <h2 class="visually-hidden">Подписка</h2>
-        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-          <h3 class="visually-hidden">Форма подписки на рассылку</h3>
-          <label class="visually-hidden" for="subscribe-email">Электронная почта</label>
-          <input id="subscribe-email" type="email" name="subscribe-email" placeholder="Электронная почта">
-          <button class="button submit-button" type="submit" aria-label="Отправить форму">Отправить</button>
-        </form>
-      </section>
+      <div class="post-content-wrapper">
+        <article class="blog-news">
+          <h2 class="blog-news-title">Новое в нашем блоге</h2>
+          <h3 class="blog-news-details">10 способов сервировки фруктовых щербетов к столу</h3>
+        </article>
+        <section class="subscribe">
+          <div class="subscribe-wrapper">
+            <h2 class="visually-hidden">Подписка</h2>
+            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+              <h3 class="visually-hidden">Форма подписки на рассылку</h3>
+              <label class="visually-hidden" for="subscribe-email">Электронная почта</label>
+              <input id="subscribe-email" type="email" name="subscribe-email" placeholder="Электронная почта">
+              <button class="button submit-button" type="submit" aria-label="Отправить форму">Отправить</button>
+            </form>
+        </div>
+        </section>
+      </div>
       <section class="map">
       </section>
     </main>

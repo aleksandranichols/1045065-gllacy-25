@@ -11,83 +11,91 @@
     <header class="main-header">
       <div class="container">
         <nav class="main-navigation">
-          <a class="logo-link" href="index.html">
-            <img src="img/logo-glassyshop.svg" alt="Логотип GlassyShop" width="154" height="64">
-          </a>
-          <ul class="main-menu">
-            <li>
-              <span class="main-menu-item-current">Каталог</span>
-              <ul class="dropdown">
-                <li><a href="ice-cream-new.html">Новинки</a></li>
-                <li class="current-page">Сливочное</li>
-                <li><a href="ice-cream-sherbet.html">Щербеты</a></li>
-                <li><a href="ice-cream-popsicle.html">Фруктовый лед</a></li>
-                <li><a href="ice-cream-mellorine.html">Мелорин</a></li>
-              </ul>
-            </li>
-            <li class="main-menu-item"><a href="delivery.html">Доставка и оплата</a></li>
-            <li class="main-menu-item"><a href="about-us.html">О Компании</a></li>
-          </ul>
-          <div class="search">
-            <button class="search-button" type="button" aria-label="Кнопка поиска"></button>
-            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-              <h3 class="visually-hidden">Форма поиска</h3>
-              <label class="visually-hidden" for="search">Поле ввода поиска</label>
-              <input id="search" type="search" name="search" placeholder="Что ищем?">
-            </form>
+          <div class="main-menu-wrapper">
+            <a class="logo-link" href="index.html">
+              <img src="img/logo-glassyshop.svg" alt="Логотип GlassyShop" width="154" height="64">
+            </a>
+            <ul class="main-menu">
+              <li>
+                <span class="main-menu-item-current">Каталог</span>
+                <ul class="dropdown">
+                  <li><a href="ice-cream-new.html">Новинки</a></li>
+                  <li class="current-page">Сливочное</li>
+                  <li><a href="ice-cream-sherbet.html">Щербеты</a></li>
+                  <li><a href="ice-cream-popsicle.html">Фруктовый лед</a></li>
+                  <li><a href="ice-cream-mellorine.html">Мелорин</a></li>
+                </ul>
+              </li>
+              <li class="main-menu-item"><a href="delivery.html">Доставка и оплата</a></li>
+              <li class="main-menu-item"><a href="about-us.html">О Компании</a></li>
+            </ul>
           </div>
-          <div class="sign-in">
-            <a href="sign-in.html">Вход</a>
-            <form class="sign-in-form" action="https://echo.htmlacademy.ru" method="get">
-              <h3 class="visually-hidden">Форма входа</h3>
-              <p>
-                <label class="visually-hidden" for="sign-in-email">Поле ввода почты</label>
-                <input id="sign-in-email" type="email" name="sign-in-email" placeholder="Электронная почта">
-              </p>
-              <p>
-                <label class="visually-hidden" for="sign-in-password">Поле ввода пароля</label>
-                <input id="sign-in-password" type="password" name="sign-in-password" placeholder="Пароль">
-              </p>
-              <p><a href="forgot-password.html">Забыли пароль?</a></p>
-              <p><a href="sign-up.html">Новая регистрация</a></p>
-              <button class="button submit-button" type="submit" aria-label="Войти">Войти</button>
-            </form>
-          </div>
-          <div class="cart-full">
-            <a href="cart.html">2 товара</a>
-            <form class="cart-form" action="https://echo.htmlacademy.ru" method="post">
-              <table>
-                <tr>
-                    <th><button class="remove-button" type="button" aria-label="Удалить мороженое из корзины">X</button></th>
-                    <th><img src="img/ice-cream-orange.jpg" alt="Мороженое для любителей апельсинок" width="33" height="33"></th>
-                    <th>Пломбир с апельсиновым джемом</th>
-                    <th>1,5 кг х 200 руб.</th>
-                    <th>300 руб.</th>
-                </tr>
-                <tr>
-                    <th><button class="remove-button" type="button" aria-label="Удалить мороженое из корзины">X</button></th>
-                    <th><img src="img/ice-cream-strawberry.jpg" alt="Мороженое для любителей клубники" width="33" height="33"></th>
-                    <th>Клубничный пломбир с присыпкой из белого шоколада</th>
-                    <th>1,5 кг х 300 руб.</th>
-                    <th>450 руб.</th>
-                </tr>
-              </table>
-              <b>Итого: 750 руб.</b>
-              <button class="button submit-button" type="submit" aria-label="Оформить заказ">Оформить заказ</button>
-            </form>
+          <div class="post-menu-wrapper">
+            <div class="search">
+              <button class="search-button" type="button" aria-label="Кнопка поиска"></button>
+              <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+                <h3 class="visually-hidden">Форма поиска</h3>
+                <label class="visually-hidden" for="search">Поле ввода поиска</label>
+                <input id="search" type="search" name="search" placeholder="Что ищем?">
+              </form>
+            </div>
+            <div class="sign-in">
+              <a href="sign-in.html">Вход</a>
+              <form class="sign-in-form" action="https://echo.htmlacademy.ru" method="get">
+                <h3 class="visually-hidden">Форма входа</h3>
+                <p>
+                  <label class="visually-hidden" for="sign-in-email">Поле ввода почты</label>
+                  <input id="sign-in-email" type="email" name="sign-in-email" placeholder="Электронная почта">
+                </p>
+                <p>
+                  <label class="visually-hidden" for="sign-in-password">Поле ввода пароля</label>
+                  <input id="sign-in-password" type="password" name="sign-in-password" placeholder="Пароль">
+                </p>
+                <p><a href="forgot-password.html">Забыли пароль?</a></p>
+                <p><a href="sign-up.html">Новая регистрация</a></p>
+                <button class="button submit-button" type="submit" aria-label="Войти">Войти</button>
+              </form>
+            </div>
+            <div class="cart-full">
+              <a href="cart.html">2 товара</a>
+              <form class="cart-form" action="https://echo.htmlacademy.ru" method="post">
+                <table>
+                  <tr>
+                      <th><button class="remove-button" type="button" aria-label="Удалить мороженое из корзины">X</button></th>
+                      <th><img src="img/ice-cream-orange.jpg" alt="Мороженое для любителей апельсинок" width="33" height="33"></th>
+                      <th>Пломбир с апельсиновым джемом</th>
+                      <th>1,5 кг х 200 руб.</th>
+                      <th>300 руб.</th>
+                  </tr>
+                  <tr>
+                      <th><button class="remove-button" type="button" aria-label="Удалить мороженое из корзины">X</button></th>
+                      <th><img src="img/ice-cream-strawberry.jpg" alt="Мороженое для любителей клубники" width="33" height="33"></th>
+                      <th>Клубничный пломбир с присыпкой из белого шоколада</th>
+                      <th>1,5 кг х 300 руб.</th>
+                      <th>450 руб.</th>
+                  </tr>
+                </table>
+                <b>Итого: 750 руб.</b>
+                <button class="button submit-button" type="submit" aria-label="Оформить заказ">Оформить заказ</button>
+              </form>
+            </div>
           </div>
         </nav>
       </div>
-      <p class="open-hours">с 10 до 20 ежедневно</p>
-      <p class="phone-number">8 812 450-25-25</p>
-      <div class="breadcrumbs-navigation">
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
-          <li class="breadcrumbs-item"><a href="catalog.html">Каталог</a></li>
-          <li class="breadcrumbs-item breadcrumbs-current">Сливочное</li>
-        </ul>
+      <div class="breadcrumbs-wrapper">
+        <p class="open-hours">с 10 до 20, ежедневно</p>
+        <div class="breadcrumbs-navigation">
+          <ul class="breadcrumbs">
+            <div class="breadcrumbs-item-wrapper">
+              <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
+              <li class="breadcrumbs-item"><a href="catalog.html">Каталог</a></li>
+              <li class="breadcrumbs-item breadcrumbs-current">Сливочное</li>
+            </div>
+            <li class="phone-number">8 812 450-25-25</li>
+          </ul>
+        </div>
+        <h1 class="page-title-creamy">Сливочное мороженое</h1>
       </div>
-      <h1 class="page-title-creamy">Сливочное мороженое</h1>
     </header>
     <main class="container">
       <section class="catalog-creamy">
