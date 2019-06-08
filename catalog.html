@@ -16,23 +16,25 @@
               <img src="img/logo-glassyshop.svg" alt="Логотип GlassyShop" width="154" height="64">
             </a>
             <ul class="main-menu">
-              <li>
+              <li class="main-menu-item-inner">
                 <span class="main-menu-item-current">Каталог</span>
                 <ul class="dropdown">
-                  <li><a href="ice-cream-new.html">Новинки</a></li>
-                  <li class="current-page">Сливочное</li>
-                  <li><a href="ice-cream-sherbet.html">Щербеты</a></li>
-                  <li><a href="ice-cream-popsicle.html">Фруктовый лед</a></li>
-                  <li><a href="ice-cream-mellorine.html">Мелорин</a></li>
+                  <li class="new-items"><a href="ice-cream-new.html">Новинки</a></li>
+                  <li class="dropdown-items-current">Сливочное</li>
+                  <li class="dropdown-items"><a href="ice-cream-sherbet.html">Щербеты</a></li>
+                  <li class="dropdown-items"><a href="ice-cream-popsicle.html">Фруктовый лед</a></li>
+                  <li class="dropdown-items"><a href="ice-cream-mellorine.html">Мелорин</a></li>
                 </ul>
               </li>
-              <li class="main-menu-item"><a href="delivery.html">Доставка и оплата</a></li>
-              <li class="main-menu-item"><a href="about-us.html">О Компании</a></li>
+              <li class="main-menu-item-inner"><a href="delivery.html">Доставка и оплата</a></li>
+              <li class="main-menu-item-inner"><a href="about-us.html">О Компании</a></li>
             </ul>
           </div>
-          <div class="post-menu-wrapper">
+          <div class="post-menu-wrapper-inner">
             <div class="search">
-              <button class="search-button" type="button" aria-label="Кнопка поиска"></button>
+              <button class="search-button" type="button" aria-label="Кнопка поиска">
+                <svg class="magnifier-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
+              </button>
               <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
                 <h3 class="visually-hidden">Форма поиска</h3>
                 <label class="visually-hidden" for="search">Поле ввода поиска</label>
@@ -40,7 +42,9 @@
               </form>
             </div>
             <div class="sign-in">
-              <a href="sign-in.html">Вход</a>
+              <a class="sign-in-link" href="sign-in.html">
+                <svg class="sign-in-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#000"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
+              Вход</a>
               <form class="sign-in-form" action="https://echo.htmlacademy.ru" method="get">
                 <h3 class="visually-hidden">Форма входа</h3>
                 <p>
@@ -51,32 +55,40 @@
                   <label class="visually-hidden" for="sign-in-password">Поле ввода пароля</label>
                   <input id="sign-in-password" type="password" name="sign-in-password" placeholder="Пароль">
                 </p>
-                <p><a href="forgot-password.html">Забыли пароль?</a></p>
-                <p><a href="sign-up.html">Новая регистрация</a></p>
-                <button class="button submit-button" type="submit" aria-label="Войти">Войти</button>
+                <div class="sign-in-wrapper">
+                  <div class="sign-in-left">
+                    <button class="button submit-button" type="submit" aria-label="Войти">Войти</button>
+                  </div>
+                  <div class="sign-in-right">
+                    <p><a href="forgot-password.html">Забыли пароль?</a></p>
+                    <p><a href="sign-up.html">Новая регистрация</a></p>
+                  </div>
+                </div>
               </form>
             </div>
             <div class="cart-full">
               <a href="cart.html">2 товара</a>
               <form class="cart-form" action="https://echo.htmlacademy.ru" method="post">
-                <table>
-                  <tr>
-                      <th><button class="remove-button" type="button" aria-label="Удалить мороженое из корзины">X</button></th>
-                      <th><img src="img/ice-cream-orange.jpg" alt="Мороженое для любителей апельсинок" width="33" height="33"></th>
-                      <th>Пломбир с апельсиновым джемом</th>
-                      <th>1,5 кг х 200 руб.</th>
-                      <th>300 руб.</th>
-                  </tr>
-                  <tr>
-                      <th><button class="remove-button" type="button" aria-label="Удалить мороженое из корзины">X</button></th>
-                      <th><img src="img/ice-cream-strawberry.jpg" alt="Мороженое для любителей клубники" width="33" height="33"></th>
-                      <th>Клубничный пломбир с присыпкой из белого шоколада</th>
-                      <th>1,5 кг х 300 руб.</th>
-                      <th>450 руб.</th>
-                  </tr>
-                </table>
-                <b>Итого: 750 руб.</b>
-                <button class="button submit-button" type="submit" aria-label="Оформить заказ">Оформить заказ</button>
+                <ul class="cart-form-list">
+                  <li class="cart-form-item">
+                      <button class="remove-button" type="button" aria-label="Удалить мороженое из корзины">X</button>
+                      <img src="img/ice-cream-orange.jpg" alt="Мороженое для любителей апельсинок" width="33" height="33">
+                      <p class="item-name">Пломбир с апельсиновым джемом</p>
+                      <p class="item-amount">1,5 кг х <span>200 руб.</span></p>
+                      <p class="item-price">300 руб.</p>
+                  </li>
+                  <li class="cart-form-item">
+                      <button class="remove-button" type="button" aria-label="Удалить мороженое из корзины">X</button>
+                      <img src="img/ice-cream-strawberry.jpg" alt="Мороженое для любителей клубники" width="33" height="33">
+                      <p class="item-name">Клубничный пломбир с присыпкой из белого шоколада</p>
+                      <p class="item-amount">1,5 кг х <span>300 руб.</span></p>
+                      <p class="item-price">450 руб.</p>
+                  </li>
+                </ul>
+                <div class="cart-total-wrapper">
+                  <p class="item-total">Итого: 750 руб.</p>
+                  <button class="button order-button" type="submit" aria-label="Оформить заказ">Оформить заказ</button>
+                </div>
               </form>
             </div>
           </div>
@@ -84,82 +96,120 @@
       </div>
       <div class="breadcrumbs-wrapper">
         <p class="open-hours">с 10 до 20, ежедневно</p>
-        <div class="breadcrumbs-navigation">
           <ul class="breadcrumbs">
-            <div class="breadcrumbs-item-wrapper">
-              <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
-              <li class="breadcrumbs-item"><a href="catalog.html">Каталог</a></li>
-              <li class="breadcrumbs-item breadcrumbs-current">Сливочное</li>
-            </div>
+            <li>
+              <ul class="breadcrumbs-item-wrapper">
+                <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
+                <li>»</li>
+                <li class="breadcrumbs-item"><a href="catalog.html">Каталог</a></li>
+                <li>»</li>
+                <li class="breadcrumbs-item breadcrumbs-current">Сливочное</li>
+              </ul>
+            </li>
             <li class="phone-number">8 812 450-25-25</li>
           </ul>
-        </div>
         <h1 class="page-title-creamy">Сливочное мороженое</h1>
       </div>
     </header>
-    <main class="container">
+    <main class="container-inner">
       <section class="catalog-creamy">
         <h2 class="visually-hidden">Список сливочного мороженого</h2>
         <ul class="catalog-creamy-list">
           <li class="list-item-creamy">
-            <img src="img/ice-cream-orange.jpg" alt="Мороженое для любителей апельсинок" width="267" height="267">
-            <p class="list-price-creamy">310₽<span class="kg">/кг</span></p>
-            <h3 class="list-title-creamy"><a href="ice-cream-orange.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
+            <div class="list-item-wrapper">
+              <img src="img/ice-cream-orange.jpg" alt="Мороженое для любителей апельсинок" width="267" height="267">
+              <p class="list-price-creamy">310₽<span class="kg">/кг</span></p>
+              <h3 class="list-title-creamy"><a href="ice-cream-orange.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
+              <button class="button view-button" type="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+            </div>
           </li>
           <li class="list-item-creamy">
-            <img src="img/ice-cream-coffee.jpg" alt="Мороженое для любителей кофе" width="267" height="267">
-            <p class="list-price-creamy">380₽<span class="kg">/кг</span></p>
-            <h3 class="list-title-creamy"><a href="ice-cream-coffee.html">Сливочно-кофейное с кусочками шоколада</a></h3>
+            <div class="list-item-wrapper">
+              <img src="img/ice-cream-coffee.jpg" alt="Мороженое для любителей кофе" width="267" height="267">
+              <p class="list-price-creamy">380₽<span class="kg">/кг</span></p>
+              <h3 class="list-title-creamy"><a href="ice-cream-coffee.html">Сливочно-кофейное с кусочками шоколада</a></h3>
+              <button class="button view-button" type="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+            </div>
           </li>
           <li class="list-item-creamy">
-            <img src="img/ice-cream-strawberry.jpg" alt="Мороженое для любителей клубники" width="267" height="267">
-            <p class="list-price-creamy">355₽<span class="kg">/кг</span></p>
-            <h3 class="list-title-creamy"><a href="ice-cream-strawberry.html">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
+            <div class="list-item-wrapper">
+              <img src="img/ice-cream-strawberry.jpg" alt="Мороженое для любителей клубники" width="267" height="267">
+              <p class="list-price-creamy">355₽<span class="kg">/кг</span></p>
+              <h3 class="list-title-creamy"><a href="ice-cream-strawberry.html">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
+              <button class="button view-button" type="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+            </div>
           </li>
           <li class="list-item-creamy">
-            <img src="img/ice-cream-brulee.jpg" alt="Мороженое для любителей крем брюле" width="267" height="267">
-            <p class="list-price-creamy">415₽<span class="kg">/кг</span></p>
-            <h3 class="list-title-creamy"><a href="ice-cream-brulee.html">Сливочное крем-брюле с карамельной подливкой</a></h3>
+            <div class="list-item-wrapper">
+              <img src="img/ice-cream-brulee.jpg" alt="Мороженое для любителей крем брюле" width="267" height="267">
+              <p class="list-price-creamy">415₽<span class="kg">/кг</span></p>
+              <h3 class="list-title-creamy"><a href="ice-cream-brulee.html">Сливочное крем-брюле с карамельной подливкой</a></h3>
+              <button class="button view-button" type="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+            </div>
           </li>
           <li class="list-item-creamy">
-            <img src="img/ice-cream-cranberry.jpg" alt="Мороженое для любителей брусники" width="267" height="267">
-            <p class="list-price-creamy">325₽<span class="kg">/кг</span></p>
-            <h3 class="list-title-creamy"><a href="ice-cream-cranberry.html">Сливочное с брусничным джемом</a></h3>
+            <div class="list-item-wrapper">
+              <img src="img/ice-cream-cranberry.jpg" alt="Мороженое для любителей брусники" width="267" height="267">
+              <p class="list-price-creamy">325₽<span class="kg">/кг</span></p>
+              <h3 class="list-title-creamy"><a href="ice-cream-cranberry.html">Сливочное с брусничным джемом</a></h3>
+              <button class="button view-button" type="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+            </div>
           </li>
           <li class="list-item-creamy">
-            <img src="img/ice-cream-blueberry.jpg" alt="Мороженое для любителей черники" width="267" height="267">
-            <p class="list-price-creamy">410₽<span class="kg">/кг</span></p>
-            <h3 class="list-title-creamy"><a href="ice-cream-blueberry.html">Сливочно-черничное с цельными ягодами черники</a></h3>
+            <div class="list-item-wrapper">
+              <img src="img/ice-cream-blueberry.jpg" alt="Мороженое для любителей черники" width="267" height="267">
+              <p class="list-price-creamy">410₽<span class="kg">/кг</span></p>
+              <h3 class="list-title-creamy"><a href="ice-cream-blueberry.html">Сливочно-черничное с цельными ягодами черники</a></h3>
+              <button class="button view-button" type="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+            </div>
           </li>
           <li class="list-item-creamy">
-            <img src="img/ice-cream-lemon.jpg" alt="Мороженое для любителей лимона" width="267" height="267">
-            <p class="list-price-creamy">375₽<span class="kg">/кг</span></p>
-            <h3 class="list-title-creamy"><a href="ice-cream-lemon.html">Сливочно-лимонное с карамельной присыпкой</a></h3>
+            <div class="list-item-wrapper">
+              <img src="img/ice-cream-lemon.jpg" alt="Мороженое для любителей лимона" width="267" height="267">
+              <p class="list-price-creamy">375₽<span class="kg">/кг</span></p>
+              <h3 class="list-title-creamy"><a href="ice-cream-lemon.html">Сливочно-лимонное с карамельной присыпкой</a></h3>
+              <button class="button view-button" type="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+            </div>
           </li>
           <li class="list-item-creamy">
-            <img src="img/ice-cream-chocolate.jpg" alt="Мороженое для любителей шоколада" width="267" height="267">
-            <p class="list-price-creamy">320₽<span class="kg">/кг</span></p>
-            <h3 class="list-title-creamy"><a href="ice-cream-chocolate.html">Сливочное с шоколадной стружкой</a></h3>
+            <div class="list-item-wrapper">
+              <img src="img/ice-cream-chocolate.jpg" alt="Мороженое для любителей шоколада" width="267" height="267">
+              <p class="list-price-creamy">320₽<span class="kg">/кг</span></p>
+              <h3 class="list-title-creamy"><a href="ice-cream-chocolate.html">Сливочное с шоколадной стружкой</a></h3>
+              <button class="button view-button" type="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+            </div>
           </li>
           <li class="list-item-creamy">
-            <img src="img/ice-cream-vanilla.jpg" alt="Мороженое для любителей ванили" width="267" height="267">
-            <p class="list-price-creamy">440₽<span class="kg">/кг</span></p>
-            <h3 class="list-title-creamy"><a href="ice-cream-vanilla.html">Сливочно-ванильное с кусочками шоколада</a></h3>
+            <div class="list-item-wrapper">
+              <img src="img/ice-cream-vanilla.jpg" alt="Мороженое для любителей ванили" width="267" height="267">
+              <p class="list-price-creamy">440₽<span class="kg">/кг</span></p>
+              <h3 class="list-title-creamy"><a href="ice-cream-vanilla.html">Сливочно-ванильное с кусочками шоколада</a></h3>
+              <button class="button view-button" type="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+            </div>
           </li>
           <li class="list-item-creamy">
-            <img src="img/ice-cream-menthol.jpg" alt="Мороженое для любителей ментола" width="267" height="267">
-            <p class="list-price-creamy">435₽<span class="kg">/кг</span></p>
-            <h3 class="list-title-creamy"><a href="ice-cream-menthol.html">Сливочноe с ментоловым сиропом</a></h3>
+            <div class="list-item-wrapper">
+              <img src="img/ice-cream-menthol.jpg" alt="Мороженое для любителей ментола" width="267" height="267">
+              <p class="list-price-creamy">435₽<span class="kg">/кг</span></p>
+              <h3 class="list-title-creamy"><a href="ice-cream-menthol.html">Сливочноe с ментоловым сиропом</a></h3>
+              <button class="button view-button" type="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+            </div>
           </li>
           <li class="list-item-creamy">
-            <img src="img/ice-cream-dark-chocolate.jpg" alt="Мороженое для любителей черного шоколада" width="267" height="267">
-            <p class="list-price-creamy">355₽<span class="kg">/кг</span></p>
-            <h3 class="list-title-creamy"><a href="ice-cream-dark-chocolate.html">Сливочное с кусочками черного шоколада</a></h3>
+            <div class="list-item-wrapper">
+              <img src="img/ice-cream-dark-chocolate.jpg" alt="Мороженое для любителей черного шоколада" width="267" height="267">
+              <p class="list-price-creamy">355₽<span class="kg">/кг</span></p>
+              <h3 class="list-title-creamy"><a href="ice-cream-dark-chocolate.html">Сливочное с кусочками черного шоколада</a></h3>
+              <button class="button view-button" type="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+            </div>
           </li>
           <li class="list-item-creamy">
-            <img src="img/ice-cream-mint.jpg" alt="Мороженое для любителей мяты" width="267" height="267">
-            <p class="list-price-creamy">420₽<span class="kg">/кг</span></p>
-            <h3 class="list-title-creamy"><a href="ice-cream-mint.html">Сливочное с мятным сиропом</a></h3>
+            <div class="list-item-wrapper">
+              <img src="img/ice-cream-mint.jpg" alt="Мороженое для любителей мяты" width="267" height="267">
+              <p class="list-price-creamy">420₽<span class="kg">/кг</span></p>
+              <h3 class="list-title-creamy"><a href="ice-cream-mint.html">Сливочное с мятным сиропом</a></h3>
+              <button class="button view-button" type="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+            </div>
           </li>
         </ul>
       </section>
@@ -168,18 +218,26 @@
       <div class="container">
         <div class="social">
           <ul class="social-list">
-            <li class="social-list-item"><a href="#">Twitter</a></li>
-            <li class="social-list-item"><a href="#">Instagram</a></li>
-            <li class="social-list-item"><a href="#">Facebook</a></li>
-            <li class="social-list-item"><a href="#">VK</a></li>
+            <li class="social-list-item"><a class="twitter" href="#"><span class="visually-hidden">Twitter</span></a></li>
+            <li class="social-list-item"><a class="instagram" href="#"><span class="visually-hidden">Instagram</span></a></li>
+            <li class="social-list-item"><a class="facebook" href="#"><span class="visually-hidden">Facebook</span></a></li>
+            <li class="social-list-item"><a class="vk" href="#"><span class="visually-hidden">VK</span></a></li>
           </ul>
         </div>
         <div class="information">
           <ul class="information-list">
-            <li class="vendors"><a href="vendors.html">Для поставщиков</a></li>
-            <li><a href="documents.html">Наши документы</a></li>
-            <li><a href="about-production.html">О производстве</a></li>
-            <li><a href="standards.html">Экологические стандарты</a></li>
+            <li>
+              <ul class="information-list-left">
+                <li class="vendors"><a href="vendors.html">Для поставщиков</a></li>
+                <li><a href="about-production.html">О производстве</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="information-list-right">
+                <li><a href="documents.html">Наши документы</a></li>
+                <li><a href="standards.html">Экологические стандарты</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
         <div class="copyright">
