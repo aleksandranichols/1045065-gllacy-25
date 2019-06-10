@@ -149,6 +149,7 @@ height: auto;
 }
 
 .button {
+  cursor: pointer;
   font: inherit;
   font-weight: bold;
   font-size: 18px;
@@ -1186,9 +1187,6 @@ input::placeholder,
   line-height: 28px;
   color: #323232;
   background-color: #f8f7f4;
-  margin-top: 15px;
-  margin-bottom: 20px;
-  margin-left: 24px;
 }
 
 .feedback-form input {
@@ -1256,9 +1254,23 @@ input::placeholder,
 }
 
 .cart-form .remove-button {
+  cursor: pointer;
   margin-right: 9px;
 }
 
+.close-button {
+  cursor: pointer;
+}
+
+.feedback-form-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-left: 24px;
+  margin-right: 12px;
+
+}
 
 .cart-form li {
   margin-bottom: 18px;
