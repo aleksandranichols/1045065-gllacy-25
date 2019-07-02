@@ -2,14 +2,19 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/minified.css">
   </head>
   <body>
+    <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+    <div class="site-wrapper">
     <header class="main-header">
-      <div class="container">
+      <div class="container-header">
         <nav class="main-navigation">
           <div class="main-menu-wrapper">
               <img src="img/logo-glassyshop.svg" alt="Логотип GlassyShop" width="154" height="64">
@@ -69,9 +74,90 @@
             </div>
           </div>
         </nav>
+        <p class="open-hours">С 10 до 20, ежедневно</p>
+        <p class="phone-number">8 812 450-25-25</p>
       </div>
     </header>
     <main class="container">
+      <section class="main-slider">
+        <div class="slider-controls">
+            <label for="product-1">Первый</label>
+            <label for="product-2">Второй</label>
+            <label for="product-3">Третий</label>
+        </div>
+        <ul class="slider-list">
+          <li class="slider-item slide" id="slide1">
+            <h3 class="slide-title">
+              Крем-брюле и пломбир с малиновым джемом
+            </h3>
+            <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+          <li class="slider-item slide" id="slide2">
+            <h3 class="slide-title">
+              Шоколадный пломбир и лимонный сорбет
+            </h3>
+            <a class="button slide-button" href="#">Давайте оба!</a>
+          </li>
+          <li class="slider-item slide" id="slide3">
+            <h3 class="slide-title">
+              Пломбир с помадкой и клубничный щербет
+            </h3>
+            <a class="button slide-button" href="#">Давайте оба!</a>
+          </li>
+        </ul>
+      </section>
+      <section class="ads">
+        <h2 class="visually-hidden">Специальные предложения</h2>
+        <ul class="ads-list">
+          <li class="ads-raspberry">
+            <h3 class="ads-name">Малинка даром!</h3>
+            <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+            <a class="button raspberry-button" href="#">Хочу варенье!</a>
+          </li>
+          <li class="ads-chocolate">
+            <h3 class="ads-name">Шоколадки даром!</h3>
+            <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+            <a class="button chocolate-button" href="#">Хочу шоколадки!</a>
+          </li>
+        </ul>
+      </section>
+      <section class="catalog-promo">
+        <h2 class="visually-hidden">Список сливочного мороженого</h2>
+        <ul class="catalog-promo-list">
+          <li class="list-item-promo">
+            <div class="list-item-promowrap">
+              <img src="img/ice-cream-orange.jpg" alt="Мороженое для любителей апельсинок" width="267" height="267">
+              <p class="list-price-creamy">310₽<span class="kg">/кг</span></p>
+              <h3 class="list-title-creamy"><a href="ice-cream-orange.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
+              <button class="button view-button" type="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+            </div>
+          </li>
+          <li class="list-item-promo">
+            <div class="list-item-promowrap">
+              <img src="img/ice-cream-coffee.jpg" alt="Мороженое для любителей кофе" width="267" height="267">
+              <p class="list-price-creamy">380₽<span class="kg">/кг</span></p>
+              <h3 class="list-title-creamy"><a href="ice-cream-coffee.html">Сливочно-кофейное с кусочками шоколада</a></h3>
+              <button class="button view-button" type="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+            </div>
+          </li>
+          <li class="list-item-promo">
+            <div class="list-item-promowrap">
+              <img src="img/ice-cream-strawberry.jpg" alt="Мороженое для любителей клубники" width="267" height="267">
+              <p class="list-price-creamy">355₽<span class="kg">/кг</span></p>
+              <h3 class="list-title-creamy"><a href="ice-cream-strawberry.html">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
+              <button class="button view-button" type="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+            </div>
+          </li>
+          <li class="list-item-promo">
+            <div class="list-item-promowrap">
+              <img src="img/ice-cream-brulee.jpg" alt="Мороженое для любителей крем брюле" width="267" height="267">
+              <p class="list-price-creamy">415₽<span class="kg">/кг</span></p>
+              <h3 class="list-title-creamy"><a href="ice-cream-brulee.html">Сливочное крем-брюле с карамельной подливкой</a></h3>
+              <button class="button view-button" type="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+            </div>
+          </li>
+        </ul>
+      </section>
       <section class="about-glassy">
         <h1 class="page-title-main">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
         <h2 class="visually-hidden">Почему нужно выбрать нас</h2>
@@ -112,7 +198,16 @@
         </div>
         </section>
       </div>
-      <section class="map">
+      <section class="contact-details">
+        <div class="contact-details-wrapper">
+          <h2 class="visually-hidden">Адрес главного офиса и офлайн-магазина</h2>
+          <p>Адрес главного офиса и офлайн-магазина:</p>
+          <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+          <p>Для заказов по телефону:</p>
+          <b>8 812 450-25-25</b>
+          <p>(с 10 до 20 ежедневно)</p>
+          <button class="button initiate-feedback-button" type="button" aria-label="Форма обратной связи">Форма обратной связи</button>
+        </div>
       </section>
     </main>
     <footer class="main-footer">
@@ -167,6 +262,7 @@
       </p>
       <button class="button submit-button feedback-button" type="submit" aria-label="Отправить форму">Отправить</button>
     </form>
-    <script src="js/script.js"></script>
+    <script src="js/minified.js"></script>
+  </div>
   </body>
 </html>

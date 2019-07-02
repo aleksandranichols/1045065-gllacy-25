@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -9,7 +10,7 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="container-header">
         <nav class="main-navigation">
           <div class="main-menu-wrapper">
             <a class="logo-link" href="index.html">
@@ -17,7 +18,7 @@
             </a>
             <ul class="main-menu">
               <li class="main-menu-item-inner">
-                <span class="main-menu-item-current">Каталог</span>
+                <span class="main-menu-item-current"><a class="current-link" href="catalog.html">Каталог</a></span>
                 <ul class="dropdown">
                   <li class="new-items"><a href="ice-cream-new.html">Новинки</a></li>
                   <li class="dropdown-items-current">Сливочное</li>
@@ -93,25 +94,116 @@
             </div>
           </div>
         </nav>
-      </div>
-      <div class="breadcrumbs-wrapper">
-        <p class="open-hours">с 10 до 20, ежедневно</p>
-          <ul class="breadcrumbs">
-            <li>
-              <ul class="breadcrumbs-item-wrapper">
-                <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
-                <li>»</li>
-                <li class="breadcrumbs-item"><a href="catalog.html">Каталог</a></li>
-                <li>»</li>
-                <li class="breadcrumbs-item breadcrumbs-current">Сливочное</li>
-              </ul>
-            </li>
-            <li class="phone-number">8 812 450-25-25</li>
-          </ul>
-        <h1 class="page-title-creamy">Сливочное мороженое</h1>
+        <p class="open-hours-inner">С 10 до 20, ежедневно</p>
+        <p class="phone-number-inner">8 812 450-25-25</p>
       </div>
     </header>
     <main class="container-inner">
+      <div class="breadcrumbs">
+          <ul class="breadcrumbs-list">
+            <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumbs-item">»</li>
+            <li class="breadcrumbs-item"><a href="catalog.html">Каталог</a></li>
+            <li class="breadcrumbs-item">»</li>
+            <li class="breadcrumbs-item breadcrumbs-current">Сливочное</li>
+          </ul>
+        <h1 class="page-title-creamy">Сливочное мороженое</h1>
+      </div>
+      <section class="filter">
+        <h2 class="visually-hidden">Фильтры для мороженого</h2>
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+        <ul class="filter-list">
+          <li class="sorting">
+            <label class="filter-name" for="sorting">Сортировка:</label>
+            <div class="sorting-wrapper">
+              <select class="filter-select" id="sorting" name="sorting">
+                <option value="popular" selected>по популярности</option>
+                <option value="price-asc">сначала недорогие</option>
+                <option value="price-desc">сначала дорогие</option>
+                <option value="fat">по жирности</option>
+              </select>
+              <svg class="select-img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            	   width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                 <polyline fill="#FFFFFF" points="5.5,10 0,0 11,0 "/>
+               </svg>
+            </div>
+          </li>
+          <li>
+            <fieldset class="price-range">
+              <legend class="filter-name">Цена:
+                <output name="selected-price">100 руб. – 500 руб.</output>
+              </legend>
+              <div class="price-option-wrapper">
+                <button class="range-button range-button-top" type="button" aria-label="Нижний уровень цены"></button>
+                <button class="range-button range-button-bottom" type="button" aria-label="Верхний уровень цены"></button>
+              </div>
+            </fieldset>
+          </li>
+          <li>
+            <fieldset class="fat">
+              <legend class="filter-name">Жирность:</legend>
+              <div class="fat-option-wrapper">
+                <div class ="radio-wrapper">
+                  <input id="0" type="radio" name="fat-radio">
+                  <span class="checkmark"></span>
+                  <label for="0">0%</label>
+                </div>
+                <div class ="radio-wrapper">
+                  <input id="10" type="radio" name="fat-radio" checked>
+                  <span class="checkmark"></span>
+                  <label for="10">до 10%</label>
+                </div>
+                <div class ="radio-wrapper">
+                  <input id="below-30" type="radio" name="fat-radio">
+                  <span class="checkmark"></span>
+                  <label for="below-30">до 30%</label>
+                </div>
+                <div class ="radio-wrapper">
+                  <input id="above-30" type="radio" name="fat-radio">
+                  <span class="checkmark"></span>
+                  <label for="above-30">выше 30%</label>
+                </div>
+              </div>
+            </fieldset>
+          </li>
+          <li>
+            <fieldset class="fillings">
+              <legend class="filter-name">Наполнители:</legend>
+              <div class="fillings-option-wrapper">
+                <div class ="checkbox-wrapper">
+                  <input id="chocolate" type="checkbox" name="chocolate" checked>
+                  <span class="checkbox"></span>
+                  <label for="chocolate">шоколадные</label>
+                </div>
+                <div class ="checkbox-wrapper">
+                  <input id="sugar" type="checkbox" name="sugar" checked>
+                  <span class="checkbox"></span>
+                  <label for="sugar">сахарные присыпки</label>
+                </div>
+                <div class ="checkbox-wrapper">
+                  <input id="fruits" type="checkbox" name="fruits">
+                  <span class="checkbox"></span>
+                  <label for="fruits">фрукты</label>
+                </div>
+                <div class ="checkbox-wrapper">
+                  <input id="syrup" type="checkbox" name="syrup">
+                  <span class="checkbox"></span>
+                  <label for="syrup">сиропы</label>
+                </div>
+                <div class ="checkbox-wrapper">
+                  <input id="jam" type="checkbox" name="jam">
+                  <span class="checkbox"></span>
+                  <label for="jam">джемы</label>
+                </div>
+              </div>
+            </fieldset>
+          </li>
+          <li>
+            <button class="apply-button" type="submit" aria-label="Применить фильтры">Применить</button>
+          </li>
+        </ul>
+        </form>
+      </section>
       <section class="catalog-creamy">
         <h2 class="visually-hidden">Список сливочного мороженого</h2>
         <ul class="catalog-creamy-list">
@@ -211,6 +303,13 @@
               <button class="button view-button" type="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
             </div>
           </li>
+        </ul>
+        <ul class="pagination-list">
+          <li class="current-pagination-page"><a href="creamy-page-1.html">1</a></li>
+          <li class="pagination-page"><a href="creamy-page-2.html">2</a></li>
+          <li class="pagination-page"><a href="creamy-page-3.html">3</a></li>
+          <li class="pagination-page"><a href="creamy-page-4.html">4</a></li>
+          <li class="pagination-page"><a href="creamy-page-5.html">5</a></li>
         </ul>
       </section>
     </main>
