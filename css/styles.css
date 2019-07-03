@@ -1758,6 +1758,7 @@ input::placeholder,
 .contact-details iframe {
   position: relative;
   z-index: 1;
+  border: none;
 }
 
 .contact-details-wrapper {
